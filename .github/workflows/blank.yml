@@ -33,10 +33,12 @@ jobs:
       - name: Run a multi-line script
         id: test
         run: |
+          chmod +x test.sh
+          ./test.sh
           echo Add other actions to build,
           echo test, and deploy your project.
 
       - name: Use captured output
         run: |
          echo "The output from the previous step is:"
-         echo "${{ steps.test.outputs.formatted_output }}"
+         echo "${{ steps.test.outputs.function_validation_output }}"

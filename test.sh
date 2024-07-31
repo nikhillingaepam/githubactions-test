@@ -15,10 +15,10 @@ echo "function_validation_output<<EOF" >> $GITHUB_OUTPUT
 echo "$function_validation_output" >> $GITHUB_OUTPUT
 echo "EOF" >> $GITHUB_OUTPUT
 
-test = []
+my_string="[]"
 
-if [[ "$test" == "[]" ]]; then
-        echo "empyt"
+if [ "$my_string" == "[]" ]; then
+  echo "The string is equal to []"
 else
-    echo "not empty"
+  echo "The string is not equal to []"
 fi

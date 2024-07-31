@@ -16,8 +16,9 @@ echo "$function_validation_output" >> $GITHUB_OUTPUT
 echo "EOF" >> $GITHUB_OUTPUT
 
 test = []
-if [[ test == "[]" ]]; then
-  echo "empyt"
+
+if [[ "$test" == "[]" ]]; then
+        echo "empyt"
 else
- echo "not empty"
+    echo "not empty"
 fi

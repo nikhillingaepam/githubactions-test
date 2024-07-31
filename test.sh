@@ -17,7 +17,7 @@ echo "EOF" >> $GITHUB_OUTPUT
 
 my_string="[]"
 
-if [ "$my_string" == "[]" ]; then
+if [ "$my_string" = "[]" ]; then
   echo "The string is equal to []"
 else
   echo "The string is not equal to []"
